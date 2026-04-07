@@ -34,7 +34,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "arize-phoenix" },
-    { name = "google-adk", specifier = ">=1.0.0,<2.0.0" },
+    { name = "google-adk" },
     { name = "litellm" },
     { name = "openinference-instrumentation-google-adk" },
     { name = "opentelemetry-exporter-otlp" },
