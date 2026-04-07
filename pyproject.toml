@@ -1,0 +1,15 @@
+[project]
+name = "adk-agents-phoenix"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-adk>=1.0.0,<2.0.0",
+    "openinference-instrumentation-google-adk",
+    "arize-phoenix",
+    "opentelemetry-sdk",
+    "opentelemetry-exporter-otlp",
+    "litellm",
+    "python-dotenv>=1.0.0"
+]

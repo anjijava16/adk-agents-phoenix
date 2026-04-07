@@ -1,0 +1,53 @@
+{
+    "servers": {
+        "github": {
+            "type": "http",
+            "url": "https://api.githubcopilot.com/mcp/"
+        },
+        "draw_io": {
+            "type": "http",
+            "url": "https://mcp.draw.io/mcp"
+        },
+        "agentskills": {
+            "type": "http",
+            "url": "https://agentskills.io/mcp"
+        },
+        "openai": {
+            "type": "http",
+            "url": "https://developers.openai.com/mcp"
+        },
+        "langchain": {
+            "type": "http",
+            "url": "https://docs.langchain.com/mcp"
+        },
+        "microsoft": {
+            "type": "http",
+            "url": "https://learn.microsoft.com/api/mcp"
+        },
+        "pubmed": {
+            "type": "http",
+            "url": "https://pubmed.mcp.claude.com/mcp"
+        },
+        // "redis": {
+        //   "command": "npx",
+        //   "args": [
+        //     "-y",
+        //     "@modelcontextprotocol/server-redis",
+        //     "redis://localhost:6379"
+        //   ]
+        // },
+        "google": {
+            "type": "http",
+            "url": "https://developerknowledge.googleapis.com/mcp"
+        },
+        "coingecko": {
+            "type": "http",
+            "url": "https://mcp.api.coingecko.com/sse"
+        }
+    }
+}
+// Microsoft MCP API Endpoints:
+// microsoft_docs_search	Performs semantic search against Microsoft official technical documentation	query (string): The search query for retrieval
+// microsoft_docs_fetch	Fetch and convert a Microsoft documentation page into markdown format	url (string): URL of the documentation page to read
+// microsoft_code_sample_search	Search for official Microsoft/Azure code snippets and examples	query (string): Search query for Microsoft/Azure code snippets
+// language (string, optional): Programming language filter. Supported values: "python", "javascript", "csharp", "java", "go", "ruby", "php", "typescript"
