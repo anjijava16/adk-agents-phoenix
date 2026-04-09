@@ -26,13 +26,13 @@ def create_skills_agent(model_name: str | None = None) -> Agent:
     model = create_model(model_name)
 
     weather_skill = load_skill_from_dir(
-    pathlib.Path(__file__).parent / "skills" / "weather_skill"
+    pathlib.Path(__file__).parent / "skills" / "weather-skill"
 )
 
     my_skill_toolset = skill_toolset.SkillToolset(
         skills=[weather_skill]
     )
-    logger.info(f"Loaded skills: {[skill.name for skill in my_skill_toolset.skills]}")
+    #logger.info(f"Loaded skills: {[skill.name for skill in my_skill_toolset.skills]}")
 
     root_agent = Agent(
         model=model,
